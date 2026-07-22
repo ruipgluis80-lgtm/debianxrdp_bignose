@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM debian:bookworm
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -16,8 +16,9 @@ RUN apt update && apt install -y \
     nano \
     net-tools \
     policykit-1 \
-    pulseaudio \
-    pulseaudio-utils \
+    pipewire \
+    pipewire-pulse \
+    wireplumber \
     wine \
     wine32 \
     firefox-esr && \
